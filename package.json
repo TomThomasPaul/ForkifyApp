@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Tom Thomas Paul",
   "license": "ISC",
