@@ -1,4 +1,4 @@
-export const elements = { //comment test
+export const elements = { //comment test 2
     
     searchForm :document.querySelector('.search'),
     searchInput : document.querySelector('.search__field'),
