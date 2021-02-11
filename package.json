@@ -1,4 +1,5 @@
 {
+  "homepage": "https://tomthomaspaul.github.io/ForkifyApp",
   "name": "forkify",
   "version": "1.0.0",
   "description": "forkify project",
@@ -6,23 +7,26 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Tom Thomas Paul",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
-    "babel-loader": "^8.1.0",
-    "html-webpack-plugin": "^4.3.0",
-    "webpack": "^4.44.0",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "core-js": "^3.6.5",
+    "axios": "^0.21.1",
+    "core-js": "^3.8.3",
     "fractional": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "regenerator-runtime": "^0.13.7",
     "uniqid": "^5.2.0"
   }
